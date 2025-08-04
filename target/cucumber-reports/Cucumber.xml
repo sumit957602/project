@@ -1,0 +1,807 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="197.53" tests="32" skipped="0" failures="19" errors="0">
+<testcase classname="Valid booking functionality" name="Validate successful booking with all valid inputs" time="8.585">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I fill all the valid booking data from excel row 1.....................passed
+And I click on Book Now.....................................................passed
+Then all inputs should be accepted as valid.................................passed
+And booking should be successful............................................passed
+And confirmation message should be displayed................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify the Full Name field with empty input" time="8.838">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid full name ""...........................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for name field...........................passed
+And the form should not be submitted........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify form rejects invalid name data (e.g., numbers, symbols) - Example #1.1" time="6.872">
+<failure type="java.lang.AssertionError" message="Name error message should be displayed (Expected: non-empty)">
+<![CDATA[java.lang.AssertionError: Name error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_name_field(BookingValidationSteps.java:818)
+	at ✽.error message should be shown for name field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:271)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid full name "123"........................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for name field...........................failed
+And the form should not be submitted........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify form rejects invalid name data (e.g., numbers, symbols) - Example #1.2" time="6.385">
+<failure type="java.lang.AssertionError" message="Name error message should be displayed (Expected: non-empty)">
+<![CDATA[java.lang.AssertionError: Name error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_name_field(BookingValidationSteps.java:818)
+	at ✽.error message should be shown for name field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:271)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid full name "@#$%".......................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for name field...........................failed
+And the form should not be submitted........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify the Email field with empty input" time="8.554">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid email ""...............................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for email field..........................passed
+And the form should not be submitted........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify form rejects invalid email data - Example #1.1" time="6.749">
+<failure type="java.lang.AssertionError" message="Email error message should be displayed (Expected: non-empty)">
+<![CDATA[java.lang.AssertionError: Email error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field(BookingValidationSteps.java:829)
+	at ✽.error message should be shown for email field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:291)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid email "invalid-email"..................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for email field..........................failed
+And the form should not be submitted........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify form rejects invalid email data - Example #1.2" time="6.861">
+<failure type="java.lang.AssertionError" message="Email error message should be displayed (Expected: non-empty)">
+<![CDATA[java.lang.AssertionError: Email error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field(BookingValidationSteps.java:829)
+	at ✽.error message should be shown for email field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:291)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid email "test@"..........................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for email field..........................failed
+And the form should not be submitted........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify form rejects invalid email data - Example #1.3" time="6.548">
+<failure type="java.lang.AssertionError" message="Email error message should be displayed (Expected: non-empty)">
+<![CDATA[java.lang.AssertionError: Email error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field(BookingValidationSteps.java:829)
+	at ✽.error message should be shown for email field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:291)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid email "@domain.com"....................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for email field..........................failed
+And the form should not be submitted........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify the Phone Number field with empty input" time="9.066">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid phone number ""........................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for phone field..........................passed
+And the form should not be submitted........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify form rejects invalid phone data - Example #1.1" time="6.909">
+<failure type="java.lang.AssertionError" message="Phone error message should be displayed (Expected: non-empty)">
+<![CDATA[java.lang.AssertionError: Phone error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_phone_field(BookingValidationSteps.java:840)
+	at ✽.error message should be shown for phone field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:312)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid phone number "123".....................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for phone field..........................failed
+And the form should not be submitted........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify form rejects invalid phone data - Example #1.2" time="6.519">
+<failure type="java.lang.AssertionError" message="Phone error message should be displayed (Expected: non-empty)">
+<![CDATA[java.lang.AssertionError: Phone error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_phone_field(BookingValidationSteps.java:840)
+	at ✽.error message should be shown for phone field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:312)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid phone number "abcdefghij"..............................passed
+And I submit the form.......................................................passed
+Then error message should be shown for phone field..........................failed
+And the form should not be submitted........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify the Pick Up Date field with invalid input" time="6.547">
+<failure type="java.lang.AssertionError" message="Pickup Date error message should be displayed (Expected: non-empty)">
+<![CDATA[java.lang.AssertionError: Pickup Date error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_date_field(BookingValidationSteps.java:884)
+	at ✽.error message should be shown for date field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:325)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid pickup date............................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for date field...........................failed
+And the form should not be submitted........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify the Pick Up Time field with invalid input" time="6.341">
+<failure type="java.lang.AssertionError" message="Pickup Time error message should be displayed (Expected: non-empty)">
+<![CDATA[java.lang.AssertionError: Pickup Time error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_time_field(BookingValidationSteps.java:895)
+	at ✽.error message should be shown for time field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:334)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I enter invalid pickup time............................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for time field...........................failed
+And the form should not be submitted........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify the Select Cab field with blank input" time="9.466">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I leave Select Cab as default empty....................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for cab selection........................passed
+And the form should not be submitted........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify the Car Type field with default selected" time="6.552">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I leave Car Type as default selected...................................passed
+And I submit the form.......................................................passed
+Then car type should be automatically selected..............................passed
+And booking should be successful............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify the Select Trip option with blank input" time="10.184">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I do not select Long Trip or Local Trip................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for trip selection.......................passed
+And the form should not be submitted........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify the Trip Type field with blank input (One Way/Round Trip)" time="6.67">
+<failure type="java.lang.AssertionError" message="Trip Type (One Way/Round Trip) error message should be displayed (Expected: non-empty)">
+<![CDATA[java.lang.AssertionError: Trip Type (One Way/Round Trip) error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_trip_type_selection(BookingValidationSteps.java:917)
+	at ✽.error message should be shown for trip type selection(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:371)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I do not select One Way or Round Trip..................................passed
+And I submit the form.......................................................passed
+Then error message should be shown for trip type selection..................failed
+And the form should not be submitted........................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Booking form validation" name="Verify only one Trip Type (One Way/Round Trip) option can be selected" time="4.986">
+<failure type="java.lang.AssertionError" message="Only one Trip Type (One Way/Round Trip) option should be selected (Expected: true)">
+<![CDATA[java.lang.AssertionError: Only one Trip Type (One Way/Round Trip) option should be selected (Expected: true)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.only_one_trip_type_option_should_be_selected(BookingValidationSteps.java:927)
+	at ✽.only one Trip Type option should be selected(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:380)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on Booking option...............................................passed
+When I attempt to select both "One Way" and "Round Trip" options............passed
+Then only one Trip Type option should be selected...........................failed
+]]></system-out>
+</testcase>
+<testcase classname="Navigation functionality" name="Verify homepage opens correctly" time="4.502">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+Then the website should load successfully...................................passed
+And all modules should be visible...........................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navigation functionality" name="Check if the Services link works" time="2.365">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+When I click on the Services option.........................................passed
+Then the Services section should be visible.................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navigation functionality" name="Validate that the Booking link is working" time="2.281">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+When I click on Booking option..............................................passed
+Then the Booking page should be visible.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navigation functionality" name="Validate that the About link is working" time="2.725">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+When I click on About option................................................passed
+Then the About page should be visible.......................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Navigation functionality" name="Validate that the Contact link is working" time="3.357">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+When I click on Contact option..............................................passed
+Then the Contact page should be visible.....................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Services page functionality" name="Validate labels on the Services page" time="2.612">
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on the Services option..........................................passed
+Then the Services page should open..........................................passed
+Then all service types should be listed in correct order:...................passed
+]]></system-out>
+</testcase>
+<testcase classname="Services page functionality" name="Validate Mini cab link and its details" time="5.588">
+<failure type="java.lang.AssertionError" message="Mini cab details page did not open">
+<![CDATA[java.lang.AssertionError: Mini cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_mini_cab_details_page_should_open(ServicesSteps.java:76)
+	at ✽.the Mini cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:22)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on the Services option..........................................passed
+Then the Services page should open..........................................passed
+When I click on the Mini link...............................................passed
+Then the Mini cab details page should open..................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Services page functionality" name="Validate Micro cab link and its details" time="5.682">
+<failure type="java.lang.AssertionError" message="Micro cab details page did not open">
+<![CDATA[java.lang.AssertionError: Micro cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_micro_cab_details_page_should_open(ServicesSteps.java:83)
+	at ✽.the Micro cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:27)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on the Services option..........................................passed
+Then the Services page should open..........................................passed
+When I click on the Micro link..............................................passed
+Then the Micro cab details page should open.................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Services page functionality" name="Validate Sedan cab link and its details" time="6.157">
+<failure type="java.lang.AssertionError" message="Sedan cab details page did not open">
+<![CDATA[java.lang.AssertionError: Sedan cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_sedan_cab_details_page_should_open(ServicesSteps.java:90)
+	at ✽.the Sedan cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:32)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on the Services option..........................................passed
+Then the Services page should open..........................................passed
+When I click on the Sedan link..............................................passed
+Then the Sedan cab details page should open.................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Services page functionality" name="Validate SUV cab link and its details" time="5.796">
+<failure type="java.lang.AssertionError" message="SUV cab details page did not open">
+<![CDATA[java.lang.AssertionError: SUV cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_suv_cab_details_page_should_open(ServicesSteps.java:97)
+	at ✽.the SUV cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:37)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on the Services option..........................................passed
+Then the Services page should open..........................................passed
+When I click on the Suv link................................................passed
+Then the SUV cab details page should open...................................failed
+]]></system-out>
+</testcase>
+<testcase classname="Services page functionality" name="Validate Back button in cab type description page - Example #1.1" time="5.693">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b09420b142e44e95cf8a4e7d3fe26d3, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59664/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b09420b142e44e95cf8a4e7d3fe26d3
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on the Services option..........................................passed
+Then the Services page should open..........................................passed
+When I click on the "Mini" link.............................................passed
+And I click on back link....................................................failed
+Then I should go back to types of cab services page.........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Services page functionality" name="Validate Back button in cab type description page - Example #1.2" time="5.677">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f19e97e6c27487cf8946e0ba6352f284, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59690/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f19e97e6c27487cf8946e0ba6352f284
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on the Services option..........................................passed
+Then the Services page should open..........................................passed
+When I click on the "Micro" link............................................passed
+And I click on back link....................................................failed
+Then I should go back to types of cab services page.........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Services page functionality" name="Validate Back button in cab type description page - Example #1.3" time="5.695">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2ccf3dcafd8395e9b5a34c7e935266a, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59716/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2ccf3dcafd8395e9b5a34c7e935266a
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on the Services option..........................................passed
+Then the Services page should open..........................................passed
+When I click on the "Sedan" link............................................passed
+And I click on back link....................................................failed
+Then I should go back to types of cab services page.........................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Services page functionality" name="Validate Back button in cab type description page - Example #1.4" time="5.617">
+<failure type="org.openqa.selenium.TimeoutException" message="Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)">
+<![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [022f4e719c8204c9605dc0fee4bf49d0, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59742/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 022f4e719c8204c9605dc0fee4bf49d0
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]>
+</failure>
+<system-out><![CDATA[
+Given I open the Call Taxi Service application..............................passed
+And I click on the Services option..........................................passed
+Then the Services page should open..........................................passed
+When I click on the "Suv" link..............................................passed
+And I click on back link....................................................failed
+Then I should go back to types of cab services page.........................skipped
+]]></system-out>
+</testcase>
+</testsuite>

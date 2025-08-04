@@ -1,0 +1,1851 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.Cabs.BDD.runners.TestRunner" time="198.583" tests="32" errors="4" skipped="0" failures="15">
+  <properties>
+    <property name="cucumber.publish.quiet" value="true"/>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Mohammad Talha\OneDrive\Documents\Sprint\project\2 Sprint\target\test-classes;C:\Users\Mohammad Talha\OneDrive\Documents\Sprint\project\2 Sprint\target\classes;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-junit\7.14.0\cucumber-junit-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Mohammad Talha\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\Mohammad Talha\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Mohammad Talha\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Mohammad Talha\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mohammad Talha\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Mohammad Talha\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Mohammad Talha\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\Mohammad Talha\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\Mohammad Talha\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\Mohammad Talha\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Mohammad Talha\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\Mohammad Talha\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Mohammad Talha\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\Mohammad Talha\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Mohammad Talha\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Mohammad Talha\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Mohammad Talha\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Mohammad Talha\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Mohammad Talha\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Mohammad Talha\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Mohammad Talha\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Mohammad Talha\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Mohammad Talha\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Mohammad Talha\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;"/>
+    <property name="java.vm.vendor" value="Eclipse Adoptium"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://adoptium.net/"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot\bin"/>
+    <property name="sun.java.command" value="C:\Users\Mohammad Talha\AppData\Local\Temp\surefire1458092884749136328\surefirebooter-20250730164844069_3.jar C:\Users\Mohammad Talha\AppData\Local\Temp\surefire1458092884749136328 2025-07-30T16-48-43_569-jvmRun1 surefire-20250730164844069_1tmp surefire_0-20250730164844069_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Mohammad Talha\OneDrive\Documents\Sprint\project\2 Sprint\target\test-classes;C:\Users\Mohammad Talha\OneDrive\Documents\Sprint\project\2 Sprint\target\classes;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-java\7.14.0\cucumber-java-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-core\7.14.0\cucumber-core-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-gherkin\7.14.0\cucumber-gherkin-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-gherkin-messages\7.14.0\cucumber-gherkin-messages-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\gherkin\26.2.0\gherkin-26.2.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\messages\22.0.0\messages-22.0.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\tag-expressions\5.0.6\tag-expressions-5.0.6.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-expressions\16.1.2\cucumber-expressions-16.1.2.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\datatable\7.14.0\datatable-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-plugin\7.14.0\cucumber-plugin-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\docstring\7.14.0\docstring-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\html-formatter\20.4.0\html-formatter-20.4.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\junit-xml-formatter\0.2.0\junit-xml-formatter-0.2.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\ci-environment\9.2.0\ci-environment-9.2.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Mohammad Talha\.m2\repository\io\cucumber\cucumber-junit\7.14.0\cucumber-junit-7.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-java\4.15.0\selenium-java-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-api\4.15.0\selenium-api-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.15.0\selenium-chrome-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.15.0\selenium-chromium-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-json\4.15.0\selenium-json-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.15.0\selenium-manager-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v117\4.15.0\selenium-devtools-v117-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v118\4.15.0\selenium-devtools-v118-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v119\4.15.0\selenium-devtools-v119-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.15.0\selenium-devtools-v85-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.15.0\selenium-edge-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.15.0\selenium-firefox-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-http\4.15.0\selenium-http-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.15.0\selenium-ie-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.15.0\selenium-remote-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\guava\guava\32.1.2-jre\guava-32.1.2-jre.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-api\1.28.0\opentelemetry-api-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-context\1.28.0\opentelemetry-context-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.28.0\opentelemetry-exporter-logging-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.28.0\opentelemetry-sdk-metrics-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.28.0-alpha\opentelemetry-extension-incubator-1.28.0-alpha.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.28.0\opentelemetry-sdk-logs-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.28.0\opentelemetry-sdk-common-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.28.0\opentelemetry-sdk-extension-autoconfigure-spi-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.28.0\opentelemetry-sdk-extension-autoconfigure-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.28.0-alpha\opentelemetry-api-events-1.28.0-alpha.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.28.0\opentelemetry-sdk-trace-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.28.0\opentelemetry-sdk-1.28.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\opentelemetry\opentelemetry-semconv\1.28.0-alpha\opentelemetry-semconv-1.28.0-alpha.jar;C:\Users\Mohammad Talha\.m2\repository\net\bytebuddy\byte-buddy\1.14.5\byte-buddy-1.14.5.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-os\4.15.0\selenium-os-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.15.0\selenium-safari-driver-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\seleniumhq\selenium\selenium-support\4.15.0\selenium-support-4.15.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\poi\poi\5.2.4\poi-5.2.4.jar;C:\Users\Mohammad Talha\.m2\repository\commons-codec\commons-codec\1.16.0\commons-codec-1.16.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\Mohammad Talha\.m2\repository\com\zaxxer\SparseBitSet\1.3\SparseBitSet-1.3.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\logging\log4j\log4j-api\2.20.0\log4j-api-2.20.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\poi\poi-ooxml\5.2.4\poi-ooxml-5.2.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\poi\poi-ooxml-lite\5.2.4\poi-ooxml-lite-5.2.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\xmlbeans\xmlbeans\5.1.1\xmlbeans-5.1.1.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\commons\commons-compress\1.24.0\commons-compress-1.24.0.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\virtuald\curvesapi\1.08\curvesapi-1.08.jar;C:\Users\Mohammad Talha\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\Mohammad Talha\.m2\repository\com\aventstack\extentreports\5.0.9\extentreports-5.0.9.jar;C:\Users\Mohammad Talha\.m2\repository\io\reactivex\rxjava3\rxjava\3.0.4\rxjava-3.0.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\reactivestreams\reactive-streams\1.0.3\reactive-streams-1.0.3.jar;C:\Users\Mohammad Talha\.m2\repository\org\freemarker\freemarker\2.3.30\freemarker-2.3.30.jar;C:\Users\Mohammad Talha\.m2\repository\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\extentreports-cucumber7-adapter\1.14.0\extentreports-cucumber7-adapter-1.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\extent-pdf-report\2.12.0\extent-pdf-report-2.12.0.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\cucumber-pdf-report\2.14.0\cucumber-pdf-report-2.14.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\pdfbox\pdfbox\2.0.26\pdfbox-2.0.26.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\pdfbox\fontbox\2.0.26\fontbox-2.0.26.jar;C:\Users\Mohammad Talha\.m2\repository\org\knowm\xchart\xchart\3.8.0\xchart-3.8.0.jar;C:\Users\Mohammad Talha\.m2\repository\de\erichseifert\vectorgraphics2d\VectorGraphics2D\0.13\VectorGraphics2D-0.13.jar;C:\Users\Mohammad Talha\.m2\repository\de\rototor\pdfbox\graphics2d\0.30\graphics2d-0.30.jar;C:\Users\Mohammad Talha\.m2\repository\com\madgag\animated-gif-lib\1.4\animated-gif-lib-1.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\yaml\snakeyaml\2.0\snakeyaml-2.0.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\table-layout\1.5.1\table-layout-1.5.1.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\rest-assured-cucumber-pdf-report\1.5.0\rest-assured-cucumber-pdf-report-1.5.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\jsoup\jsoup\1.15.3\jsoup-1.15.3.jar;C:\Users\Mohammad Talha\.m2\repository\com\aventstack\klov-reporter\5.1.0\klov-reporter-5.1.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\mongodb\mongodb-driver\3.6.4\mongodb-driver-3.6.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\mongodb\mongodb-driver-core\3.6.4\mongodb-driver-core-3.6.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\mongodb\bson\3.6.4\bson-3.6.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Mohammad Talha\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\htmlextentreporter\1.1.0\htmlextentreporter-1.1.0.jar;C:\Users\Mohammad Talha\.m2\repository\tech\grasshopper\extent-excel-report\1.4.0\extent-excel-report-1.4.0.jar;C:\Users\Mohammad Talha\.m2\repository\commons-io\commons-io\2.13.0\commons-io-2.13.0.jar;C:\Users\Mohammad Talha\.m2\repository\io\github\bonigarcia\webdrivermanager\5.6.2\webdrivermanager-5.6.2.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\docker-java\docker-java\3.3.4\docker-java-3.3.4.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\docker-java\docker-java-core\3.3.4\docker-java-core-3.3.4.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\docker-java\docker-java-api\3.3.4\docker-java-api-3.3.4.jar;C:\Users\Mohammad Talha\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\Mohammad Talha\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\Mohammad Talha\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\Mohammad Talha\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.4\docker-java-transport-httpclient5-3.3.4.jar;C:\Users\Mohammad Talha\.m2\repository\com\github\docker-java\docker-java-transport\3.3.4\docker-java-transport-3.3.4.jar;C:\Users\Mohammad Talha\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\Mohammad Talha\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\Mohammad Talha\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Mohammad Talha\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Mohammad Talha\.m2\repository\org\slf4j\slf4j-api\2.0.9\slf4j-api-2.0.9.jar;C:\Users\Mohammad Talha\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.2\jackson-databind-2.15.2.jar;C:\Users\Mohammad Talha\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.2\jackson-annotations-2.15.2.jar;C:\Users\Mohammad Talha\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.2\jackson-core-2.15.2.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Mohammad Talha"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-04-15"/>
+    <property name="java.home" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Mohammad Talha\OneDrive\Documents\Sprint\project\2 Sprint"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Mohammad Talha\AppData\Local\Temp\surefire1458092884749136328\surefirebooter-20250730164844069_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.15+6"/>
+    <property name="user.name" value="Mohammad Talha"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Temurin-17.0.15+6"/>
+    <property name="localRepository" value="C:\Users\Mohammad Talha\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/adoptium/adoptium-support/issues"/>
+    <property name="java.io.tmpdir" value="C:\Users\MOHAMM~1\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.15"/>
+    <property name="cucumber.filter.tags" value=""/>
+    <property name="user.dir" value="C:\Users\Mohammad Talha\OneDrive\Documents\Sprint\project\2 Sprint"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Eclipse Adoptium\jdk-17.0.15.6-hotspot\bin;C:\Python312\Scripts\;C:\Python312\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\Apache\Maven\apache-maven-3.9.11\bin;C:\Users\Mohammad Talha\AppData\Local\Microsoft\WindowsApps;C:\Users\Mohammad Talha\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Mohammad Talha\AppData\Local\GitHubDesktop\bin;C:\Users\Mohammad Talha\AppData\Roaming\npm;C:\Python312;C:\Python312\Scripts;C:\Program Files\Apache\Maven\apache-maven-3.9.11\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Eclipse Adoptium"/>
+    <property name="java.vm.version" value="17.0.15+6"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="Validate successful booking with all valid inputs" classname="Valid booking functionality" time="8.701">
+    <system-out><![CDATA[🚀 BEFORE ALL: Initializing ExtentReports...
+✅ ExtentReports initialized: C:\Users\Mohammad Talha\OneDrive\Documents\Sprint\project\2 Sprint/target/ExtentReports/ExtentReport_2025-07-30_16-48-46.html
+✅ BEFORE ALL: ExtentReports initialized successfully
+
+@TC_UI_012 @TC_UI_022
+Scenario: Validate successful booking with all valid inputs # src/test/java/com/Cabs/BDD/features/booking_valid.feature:11
+🚀 Starting scenario: Validate successful booking with all valid inputs
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate successful booking with all valid inputs
+  Given I open the Call Taxi Service application            # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                             # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I fill all the valid booking data from excel row 1   # com.Cabs.BDD.stepdefs.BookingValidSteps.i_fill_all_the_valid_booking_data_from_excel_row(java.lang.Integer)
+  And I click on Book Now                                   # com.Cabs.BDD.stepdefs.BookingValidSteps.i_click_on_book_now()
+  Then all inputs should be accepted as valid               # com.Cabs.BDD.stepdefs.BookingValidSteps.all_inputs_should_be_accepted_as_valid()
+  And booking should be successful                          # com.Cabs.BDD.stepdefs.BookingValidSteps.booking_should_be_successful()
+  And confirmation message should be displayed              # com.Cabs.BDD.stepdefs.BookingValidSteps.confirmation_message_should_be_displayed()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_successful_booking_with_all_valid_inputs_2025-07-30_16-48-54.png
+
+    Embedding Success Screenshot [image/png 74397 bytes]
+
+✅ PASSED: Validate successful booking with all valid inputs
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate successful booking with all valid inputs
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:48:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:48:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the Full Name field with empty input" classname="Booking form validation" time="8.846">
+    <system-out><![CDATA[
+@TC_BOOK_013_BLANK
+Scenario: Verify the Full Name field with empty input # src/test/java/com/Cabs/BDD/features/booking_validation.feature:261
+🚀 Starting scenario: Verify the Full Name field with empty input
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify the Full Name field with empty input
+  Given I open the Call Taxi Service application      # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                       # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid full name ""                   # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_full_name(java.lang.String)
+  And I submit the form                               # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for name field   # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_name_field()
+  And the form should not be submitted                # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_the_Full_Name_field_with_empty_input_2025-07-30_16-49-03.png
+
+    Embedding Success Screenshot [image/png 83406 bytes]
+
+✅ PASSED: Verify the Full Name field with empty input
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify the Full Name field with empty input
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:48:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:48:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify form rejects invalid name data (e.g., numbers, symbols) #1" classname="Booking form validation" time="6.884">
+    <failure message="Name error message should be displayed (Expected: non-empty)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Name error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_name_field(BookingValidationSteps.java:818)
+	at ✽.error message should be shown for name field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:271)
+]]></failure>
+    <system-out><![CDATA[
+@TC_BOOK_013_INVALID_DATA
+Scenario Outline: Verify form rejects invalid name data (e.g., numbers, symbols) # src/test/java/com/Cabs/BDD/features/booking_validation.feature:275
+🚀 Starting scenario: Verify form rejects invalid name data (e.g., numbers, symbols)
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify form rejects invalid name data (e.g., numbers, symbols)
+  Given I open the Call Taxi Service application                                 # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                                                  # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid full name "123"                                           # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_full_name(java.lang.String)
+  And I submit the form                                                          # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for name field                              # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_name_field()
+      java.lang.AssertionError: Name error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_name_field(BookingValidationSteps.java:818)
+	at ✽.error message should be shown for name field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:271)
+
+  And the form should not be submitted                                           # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_form_rejects_invalid_name_data_(e.g.,_numbers,_symbols)_2025-07-30_16-49-10.png
+
+    Embedding Failed Screenshot [image/png 73806 bytes]
+
+❌ FAILED: Verify form rejects invalid name data (e.g., numbers, symbols)
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify form rejects invalid name data (e.g., numbers, symbols)
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:49:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:49:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify form rejects invalid name data (e.g., numbers, symbols) #2" classname="Booking form validation" time="6.391">
+    <failure message="Name error message should be displayed (Expected: non-empty)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Name error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_name_field(BookingValidationSteps.java:818)
+	at ✽.error message should be shown for name field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:271)
+]]></failure>
+    <system-out><![CDATA[
+@TC_BOOK_013_INVALID_DATA
+Scenario Outline: Verify form rejects invalid name data (e.g., numbers, symbols) # src/test/java/com/Cabs/BDD/features/booking_validation.feature:276
+🚀 Starting scenario: Verify form rejects invalid name data (e.g., numbers, symbols)
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify form rejects invalid name data (e.g., numbers, symbols)
+  Given I open the Call Taxi Service application                                 # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                                                  # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid full name "@#$%"                                          # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_full_name(java.lang.String)
+  And I submit the form                                                          # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for name field                              # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_name_field()
+      java.lang.AssertionError: Name error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_name_field(BookingValidationSteps.java:818)
+	at ✽.error message should be shown for name field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:271)
+
+  And the form should not be submitted                                           # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_form_rejects_invalid_name_data_(e.g.,_numbers,_symbols)_2025-07-30_16-49-16.png
+
+    Embedding Failed Screenshot [image/png 75148 bytes]
+
+❌ FAILED: Verify form rejects invalid name data (e.g., numbers, symbols)
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify form rejects invalid name data (e.g., numbers, symbols)
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:49:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:49:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the Email field with empty input" classname="Booking form validation" time="8.56">
+    <system-out><![CDATA[
+@TC_BOOK_014_BLANK
+Scenario: Verify the Email field with empty input    # src/test/java/com/Cabs/BDD/features/booking_validation.feature:281
+🚀 Starting scenario: Verify the Email field with empty input
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify the Email field with empty input
+  Given I open the Call Taxi Service application     # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                      # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid email ""                      # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_email(java.lang.String)
+  And I submit the form                              # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for email field # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field()
+  And the form should not be submitted               # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_the_Email_field_with_empty_input_2025-07-30_16-49-25.png
+
+    Embedding Success Screenshot [image/png 83406 bytes]
+
+✅ PASSED: Verify the Email field with empty input
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify the Email field with empty input
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:49:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:49:17 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify form rejects invalid email data #1" classname="Booking form validation" time="6.752">
+    <failure message="Email error message should be displayed (Expected: non-empty)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Email error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field(BookingValidationSteps.java:829)
+	at ✽.error message should be shown for email field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:291)
+]]></failure>
+    <system-out><![CDATA[
+@TC_BOOK_014_INVALID_DATA
+Scenario Outline: Verify form rejects invalid email data # src/test/java/com/Cabs/BDD/features/booking_validation.feature:295
+🚀 Starting scenario: Verify form rejects invalid email data
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify form rejects invalid email data
+  Given I open the Call Taxi Service application         # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                          # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid email "invalid-email"             # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_email(java.lang.String)
+  And I submit the form                                  # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for email field     # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field()
+      java.lang.AssertionError: Email error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field(BookingValidationSteps.java:829)
+	at ✽.error message should be shown for email field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:291)
+
+  And the form should not be submitted                   # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_form_rejects_invalid_email_data_2025-07-30_16-49-32.png
+
+    Embedding Failed Screenshot [image/png 73270 bytes]
+
+❌ FAILED: Verify form rejects invalid email data
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify form rejects invalid email data
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:49:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:49:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify form rejects invalid email data #2" classname="Booking form validation" time="6.866">
+    <failure message="Email error message should be displayed (Expected: non-empty)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Email error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field(BookingValidationSteps.java:829)
+	at ✽.error message should be shown for email field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:291)
+]]></failure>
+    <system-out><![CDATA[
+@TC_BOOK_014_INVALID_DATA
+Scenario Outline: Verify form rejects invalid email data # src/test/java/com/Cabs/BDD/features/booking_validation.feature:296
+🚀 Starting scenario: Verify form rejects invalid email data
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify form rejects invalid email data
+  Given I open the Call Taxi Service application         # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                          # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid email "test@"                     # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_email(java.lang.String)
+  And I submit the form                                  # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for email field     # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field()
+      java.lang.AssertionError: Email error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field(BookingValidationSteps.java:829)
+	at ✽.error message should be shown for email field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:291)
+
+  And the form should not be submitted                   # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_form_rejects_invalid_email_data_2025-07-30_16-49-38.png
+
+    Embedding Failed Screenshot [image/png 73206 bytes]
+
+❌ FAILED: Verify form rejects invalid email data
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify form rejects invalid email data
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:49:33 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:49:33 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify form rejects invalid email data #3" classname="Booking form validation" time="6.553">
+    <failure message="Email error message should be displayed (Expected: non-empty)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Email error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field(BookingValidationSteps.java:829)
+	at ✽.error message should be shown for email field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:291)
+]]></failure>
+    <system-out><![CDATA[
+@TC_BOOK_014_INVALID_DATA
+Scenario Outline: Verify form rejects invalid email data # src/test/java/com/Cabs/BDD/features/booking_validation.feature:297
+🚀 Starting scenario: Verify form rejects invalid email data
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify form rejects invalid email data
+  Given I open the Call Taxi Service application         # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                          # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid email "@domain.com"               # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_email(java.lang.String)
+  And I submit the form                                  # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for email field     # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field()
+      java.lang.AssertionError: Email error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_email_field(BookingValidationSteps.java:829)
+	at ✽.error message should be shown for email field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:291)
+
+  And the form should not be submitted                   # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_form_rejects_invalid_email_data_2025-07-30_16-49-45.png
+
+    Embedding Failed Screenshot [image/png 73741 bytes]
+
+❌ FAILED: Verify form rejects invalid email data
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify form rejects invalid email data
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:49:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:49:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the Phone Number field with empty input" classname="Booking form validation" time="9.069">
+    <system-out><![CDATA[
+@TC_BOOK_015_BLANK
+Scenario: Verify the Phone Number field with empty input # src/test/java/com/Cabs/BDD/features/booking_validation.feature:302
+🚀 Starting scenario: Verify the Phone Number field with empty input
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify the Phone Number field with empty input
+  Given I open the Call Taxi Service application         # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                          # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid phone number ""                   # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_phone_number(java.lang.String)
+  And I submit the form                                  # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for phone field     # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_phone_field()
+  And the form should not be submitted                   # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_the_Phone_Number_field_with_empty_input_2025-07-30_16-49-54.png
+
+    Embedding Success Screenshot [image/png 83406 bytes]
+
+✅ PASSED: Verify the Phone Number field with empty input
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify the Phone Number field with empty input
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:49:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:49:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify form rejects invalid phone data #1" classname="Booking form validation" time="6.913">
+    <failure message="Phone error message should be displayed (Expected: non-empty)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Phone error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_phone_field(BookingValidationSteps.java:840)
+	at ✽.error message should be shown for phone field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:312)
+]]></failure>
+    <system-out><![CDATA[
+@TC_BOOK_015_INVALID_DATA
+Scenario Outline: Verify form rejects invalid phone data # src/test/java/com/Cabs/BDD/features/booking_validation.feature:316
+🚀 Starting scenario: Verify form rejects invalid phone data
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify form rejects invalid phone data
+  Given I open the Call Taxi Service application         # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                          # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid phone number "123"                # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_phone_number(java.lang.String)
+  And I submit the form                                  # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for phone field     # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_phone_field()
+      java.lang.AssertionError: Phone error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_phone_field(BookingValidationSteps.java:840)
+	at ✽.error message should be shown for phone field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:312)
+
+  And the form should not be submitted                   # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_form_rejects_invalid_phone_data_2025-07-30_16-50-01.png
+
+    Embedding Failed Screenshot [image/png 72648 bytes]
+
+❌ FAILED: Verify form rejects invalid phone data
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify form rejects invalid phone data
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:49:55 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:49:55 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify form rejects invalid phone data #2" classname="Booking form validation" time="6.522">
+    <failure message="Phone error message should be displayed (Expected: non-empty)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Phone error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_phone_field(BookingValidationSteps.java:840)
+	at ✽.error message should be shown for phone field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:312)
+]]></failure>
+    <system-out><![CDATA[
+@TC_BOOK_015_INVALID_DATA
+Scenario Outline: Verify form rejects invalid phone data # src/test/java/com/Cabs/BDD/features/booking_validation.feature:317
+🚀 Starting scenario: Verify form rejects invalid phone data
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify form rejects invalid phone data
+  Given I open the Call Taxi Service application         # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                          # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid phone number "abcdefghij"         # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_phone_number(java.lang.String)
+  And I submit the form                                  # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for phone field     # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_phone_field()
+      java.lang.AssertionError: Phone error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_phone_field(BookingValidationSteps.java:840)
+	at ✽.error message should be shown for phone field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:312)
+
+  And the form should not be submitted                   # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_form_rejects_invalid_phone_data_2025-07-30_16-50-08.png
+
+    Embedding Failed Screenshot [image/png 73570 bytes]
+
+❌ FAILED: Verify form rejects invalid phone data
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify form rejects invalid phone data
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:50:02 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:50:02 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the Pick Up Date field with invalid input" classname="Booking form validation" time="6.553">
+    <failure message="Pickup Date error message should be displayed (Expected: non-empty)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Pickup Date error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_date_field(BookingValidationSteps.java:884)
+	at ✽.error message should be shown for date field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:325)
+]]></failure>
+    <system-out><![CDATA[
+@TC_BOOK_016
+Scenario: Verify the Pick Up Date field with invalid input # src/test/java/com/Cabs/BDD/features/booking_validation.feature:322
+🚀 Starting scenario: Verify the Pick Up Date field with invalid input
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify the Pick Up Date field with invalid input
+  Given I open the Call Taxi Service application           # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                            # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid pickup date                         # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_pickup_date()
+  And I submit the form                                    # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for date field        # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_date_field()
+      java.lang.AssertionError: Pickup Date error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_date_field(BookingValidationSteps.java:884)
+	at ✽.error message should be shown for date field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:325)
+
+  And the form should not be submitted                     # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_the_Pick_Up_Date_field_with_invalid_input_2025-07-30_16-50-14.png
+
+    Embedding Failed Screenshot [image/png 74397 bytes]
+
+❌ FAILED: Verify the Pick Up Date field with invalid input
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify the Pick Up Date field with invalid input
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:50:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:50:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the Pick Up Time field with invalid input" classname="Booking form validation" time="6.345">
+    <failure message="Pickup Time error message should be displayed (Expected: non-empty)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Pickup Time error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_time_field(BookingValidationSteps.java:895)
+	at ✽.error message should be shown for time field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:334)
+]]></failure>
+    <system-out><![CDATA[
+@TC_BOOK_017
+Scenario: Verify the Pick Up Time field with invalid input # src/test/java/com/Cabs/BDD/features/booking_validation.feature:331
+🚀 Starting scenario: Verify the Pick Up Time field with invalid input
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify the Pick Up Time field with invalid input
+  Given I open the Call Taxi Service application           # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                            # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I enter invalid pickup time                         # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_enter_invalid_pickup_time()
+  And I submit the form                                    # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for time field        # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_time_field()
+      java.lang.AssertionError: Pickup Time error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_time_field(BookingValidationSteps.java:895)
+	at ✽.error message should be shown for time field(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:334)
+
+  And the form should not be submitted                     # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_the_Pick_Up_Time_field_with_invalid_input_2025-07-30_16-50-20.png
+
+    Embedding Failed Screenshot [image/png 71321 bytes]
+
+❌ FAILED: Verify the Pick Up Time field with invalid input
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify the Pick Up Time field with invalid input
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:50:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:50:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the Select Cab field with blank input" classname="Booking form validation" time="9.469">
+    <system-out><![CDATA[
+@TC_BOOK_018
+Scenario: Verify the Select Cab field with blank input # src/test/java/com/Cabs/BDD/features/booking_validation.feature:340
+🚀 Starting scenario: Verify the Select Cab field with blank input
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify the Select Cab field with blank input
+  Given I open the Call Taxi Service application       # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                        # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I leave Select Cab as default empty             # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_leave_select_cab_as_default_empty()
+  And I submit the form                                # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for cab selection # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_cab_selection()
+  And the form should not be submitted                 # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_the_Select_Cab_field_with_blank_input_2025-07-30_16-50-30.png
+
+    Embedding Success Screenshot [image/png 78682 bytes]
+
+✅ PASSED: Verify the Select Cab field with blank input
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify the Select Cab field with blank input
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:50:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:50:22 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the Car Type field with default selected" classname="Booking form validation" time="6.555">
+    <system-out><![CDATA[
+@TC_BOOK_019
+Scenario: Verify the Car Type field with default selected # src/test/java/com/Cabs/BDD/features/booking_validation.feature:349
+🚀 Starting scenario: Verify the Car Type field with default selected
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify the Car Type field with default selected
+  Given I open the Call Taxi Service application          # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                           # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I leave Car Type as default selected               # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_leave_car_type_as_default_selected()
+  And I submit the form                                   # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then car type should be automatically selected          # com.Cabs.BDD.stepdefs.BookingValidationSteps.car_type_should_be_automatically_selected()
+  And booking should be successful                        # com.Cabs.BDD.stepdefs.BookingValidSteps.booking_should_be_successful()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_the_Car_Type_field_with_default_selected_2025-07-30_16-50-36.png
+
+    Embedding Success Screenshot [image/png 74397 bytes]
+
+✅ PASSED: Verify the Car Type field with default selected
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify the Car Type field with default selected
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:50:31 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:50:31 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the Select Trip option with blank input" classname="Booking form validation" time="10.188">
+    <system-out><![CDATA[
+@TC_BOOK_020
+Scenario: Verify the Select Trip option with blank input # src/test/java/com/Cabs/BDD/features/booking_validation.feature:358
+🚀 Starting scenario: Verify the Select Trip option with blank input
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify the Select Trip option with blank input
+  Given I open the Call Taxi Service application         # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                          # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I do not select Long Trip or Local Trip           # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_do_not_select_long_trip_or_local_trip()
+  And I submit the form                                  # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for trip selection  # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_trip_selection()
+  And the form should not be submitted                   # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_the_Select_Trip_option_with_blank_input_2025-07-30_16-50-47.png
+
+    Embedding Success Screenshot [image/png 75944 bytes]
+
+✅ PASSED: Verify the Select Trip option with blank input
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify the Select Trip option with blank input
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:50:38 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:50:38 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify the Trip Type field with blank input (One Way/Round Trip)" classname="Booking form validation" time="6.673">
+    <failure message="Trip Type (One Way/Round Trip) error message should be displayed (Expected: non-empty)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Trip Type (One Way/Round Trip) error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_trip_type_selection(BookingValidationSteps.java:917)
+	at ✽.error message should be shown for trip type selection(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:371)
+]]></failure>
+    <system-out><![CDATA[
+@TC_BOOK_021
+Scenario: Verify the Trip Type field with blank input (One Way/Round Trip) # src/test/java/com/Cabs/BDD/features/booking_validation.feature:368
+🚀 Starting scenario: Verify the Trip Type field with blank input (One Way/Round Trip)
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify the Trip Type field with blank input (One Way/Round Trip)
+  Given I open the Call Taxi Service application                           # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                                            # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I do not select One Way or Round Trip                               # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_do_not_select_one_way_or_round_trip()
+  And I submit the form                                                    # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_submit_the_form()
+  Then error message should be shown for trip type selection               # com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_trip_type_selection()
+      java.lang.AssertionError: Trip Type (One Way/Round Trip) error message should be displayed (Expected: non-empty)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertFalse(Assert.java:65)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.error_message_should_be_shown_for_trip_type_selection(BookingValidationSteps.java:917)
+	at ✽.error message should be shown for trip type selection(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:371)
+
+  And the form should not be submitted                                     # com.Cabs.BDD.stepdefs.BookingValidationSteps.the_form_should_not_be_submitted()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_the_Trip_Type_field_with_blank_input_(One_Way/Round_Trip)_2025-07-30_16-50-53.png
+
+    Embedding Failed Screenshot [image/png 74174 bytes]
+
+❌ FAILED: Verify the Trip Type field with blank input (One Way/Round Trip)
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify the Trip Type field with blank input (One Way/Round Trip)
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:50:48 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:50:48 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify only one Trip Type (One Way/Round Trip) option can be selected" classname="Booking form validation" time="4.988">
+    <failure message="Only one Trip Type (One Way/Round Trip) option should be selected (Expected: true)" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Only one Trip Type (One Way/Round Trip) option should be selected (Expected: true)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.only_one_trip_type_option_should_be_selected(BookingValidationSteps.java:927)
+	at ✽.only one Trip Type option should be selected(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:380)
+]]></failure>
+    <system-out><![CDATA[
+@TC_UI_024
+Scenario: Verify only one Trip Type (One Way/Round Trip) option can be selected # src/test/java/com/Cabs/BDD/features/booking_validation.feature:378
+🚀 Starting scenario: Verify only one Trip Type (One Way/Round Trip) option can be selected
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify only one Trip Type (One Way/Round Trip) option can be selected
+  Given I open the Call Taxi Service application                                # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on Booking option                                                 # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  When I attempt to select both "One Way" and "Round Trip" options              # com.Cabs.BDD.stepdefs.BookingValidationSteps.i_attempt_to_select_both_options(java.lang.String,java.lang.String)
+  Then only one Trip Type option should be selected                             # com.Cabs.BDD.stepdefs.BookingValidationSteps.only_one_trip_type_option_should_be_selected()
+      java.lang.AssertionError: Only one Trip Type (One Way/Round Trip) option should be selected (Expected: true)
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.BookingValidationSteps.only_one_trip_type_option_should_be_selected(BookingValidationSteps.java:927)
+	at ✽.only one Trip Type option should be selected(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/booking_validation.feature:380)
+
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_only_one_Trip_Type_(One_Way/Round_Trip)_option_can_be_selected_2025-07-30_16-50-58.png
+
+    Embedding Failed Screenshot [image/png 75302 bytes]
+
+❌ FAILED: Verify only one Trip Type (One Way/Round Trip) option can be selected
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify only one Trip Type (One Way/Round Trip) option can be selected
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:50:54 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:50:54 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+Warning: Trip Way checkbox 'One Way' not found.
+Warning: Trip Way checkbox 'Round Trip' not found.
+]]></system-err>
+  </testcase>
+  <testcase name="Verify homepage opens correctly" classname="Navigation functionality" time="4.507">
+    <system-out><![CDATA[
+@TC_UI_001
+Scenario: Verify homepage opens correctly        # src/test/java/com/Cabs/BDD/features/navigation.feature:10
+🚀 Starting scenario: Verify homepage opens correctly
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Verify homepage opens correctly
+  Given I open the Call Taxi Service application # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  Then the website should load successfully      # com.Cabs.BDD.stepdefs.NavigationSteps.the_website_should_load_successfully()
+  And all modules should be visible              # com.Cabs.BDD.stepdefs.NavigationSteps.all_modules_should_be_visible()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Verify_homepage_opens_correctly_2025-07-30_16-51-03.png
+
+    Embedding Success Screenshot [image/png 255971 bytes]
+
+✅ PASSED: Verify homepage opens correctly
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Verify homepage opens correctly
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:50:59 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:50:59 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Check if the Services link works" classname="Navigation functionality" time="2.367">
+    <system-out><![CDATA[
+@TC_UI_002
+Scenario: Check if the Services link works       # src/test/java/com/Cabs/BDD/features/navigation.feature:15
+🚀 Starting scenario: Check if the Services link works
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Check if the Services link works
+  Given I open the Call Taxi Service application # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  When I click on the Services option            # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_the_services_option()
+  Then the Services section should be visible    # com.Cabs.BDD.stepdefs.NavigationSteps.the_services_section_should_be_visible()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Check_if_the_Services_link_works_2025-07-30_16-51-05.png
+
+    Embedding Success Screenshot [image/png 122734 bytes]
+
+✅ PASSED: Check if the Services link works
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Check if the Services link works
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:04 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:04 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate that the Booking link is working" classname="Navigation functionality" time="2.284">
+    <system-out><![CDATA[
+@TC_UI_009
+Scenario: Validate that the Booking link is working # src/test/java/com/Cabs/BDD/features/navigation.feature:20
+🚀 Starting scenario: Validate that the Booking link is working
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate that the Booking link is working
+  Given I open the Call Taxi Service application    # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  When I click on Booking option                    # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_booking_option()
+  Then the Booking page should be visible           # com.Cabs.BDD.stepdefs.NavigationSteps.the_booking_page_should_be_visible()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_that_the_Booking_link_is_working_2025-07-30_16-51-07.png
+
+    Embedding Success Screenshot [image/png 138477 bytes]
+
+✅ PASSED: Validate that the Booking link is working
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate that the Booking link is working
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:06 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:06 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate that the About link is working" classname="Navigation functionality" time="2.728">
+    <system-out><![CDATA[
+@TC_UI_010
+Scenario: Validate that the About link is working # src/test/java/com/Cabs/BDD/features/navigation.feature:25
+🚀 Starting scenario: Validate that the About link is working
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate that the About link is working
+  Given I open the Call Taxi Service application  # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  When I click on About option                    # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_about_option()
+  Then the About page should be visible           # com.Cabs.BDD.stepdefs.NavigationSteps.the_about_page_should_be_visible()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_that_the_About_link_is_working_2025-07-30_16-51-10.png
+
+    Embedding Success Screenshot [image/png 239917 bytes]
+
+✅ PASSED: Validate that the About link is working
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate that the About link is working
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:09 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:09 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate that the Contact link is working" classname="Navigation functionality" time="3.36">
+    <system-out><![CDATA[
+@TC_UI_011
+Scenario: Validate that the Contact link is working # src/test/java/com/Cabs/BDD/features/navigation.feature:30
+🚀 Starting scenario: Validate that the Contact link is working
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate that the Contact link is working
+  Given I open the Call Taxi Service application    # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  When I click on Contact option                    # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_contact_option()
+  Then the Contact page should be visible           # com.Cabs.BDD.stepdefs.NavigationSteps.the_contact_page_should_be_visible()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_that_the_Contact_link_is_working_2025-07-30_16-51-13.png
+
+    Embedding Success Screenshot [image/png 302644 bytes]
+
+✅ PASSED: Validate that the Contact link is working
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate that the Contact link is working
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:11 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:11 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate labels on the Services page" classname="Services page functionality" time="2.621">
+    <system-out><![CDATA[
+@TC_UI_003
+Scenario: Validate labels on the Services page              # src/test/java/com/Cabs/BDD/features/services.feature:12
+🚀 Starting scenario: Validate labels on the Services page
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate labels on the Services page
+  Given I open the Call Taxi Service application            # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on the Services option                        # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_the_services_option()
+  Then the Services page should open                        # com.Cabs.BDD.stepdefs.ServicesSteps.the_services_page_should_open()
+  Then all service types should be listed in correct order: # com.Cabs.BDD.stepdefs.ServicesSteps.all_service_types_should_be_listed_in_correct_order(io.cucumber.datatable.DataTable)
+    | Mini  | 2 Seater |
+    | Micro | 3 Seater |
+    | Sedan | 4 Seater |
+    | Suv   | 7 Seater |
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_labels_on_the_Services_page_2025-07-30_16-51-16.png
+
+    Embedding Success Screenshot [image/png 122559 bytes]
+
+✅ PASSED: Validate labels on the Services page
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate labels on the Services page
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:15 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:15 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate Mini cab link and its details" classname="Services page functionality" time="5.591">
+    <failure message="Mini cab details page did not open" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Mini cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_mini_cab_details_page_should_open(ServicesSteps.java:76)
+	at ✽.the Mini cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:22)
+]]></failure>
+    <system-out><![CDATA[
+@TC_UI_004
+Scenario: Validate Mini cab link and its details # src/test/java/com/Cabs/BDD/features/services.feature:20
+🚀 Starting scenario: Validate Mini cab link and its details
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate Mini cab link and its details
+  Given I open the Call Taxi Service application # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on the Services option             # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_the_services_option()
+  Then the Services page should open             # com.Cabs.BDD.stepdefs.ServicesSteps.the_services_page_should_open()
+  When I click on the Mini link                  # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_the_mini_link()
+  Then the Mini cab details page should open     # com.Cabs.BDD.stepdefs.ServicesSteps.the_mini_cab_details_page_should_open()
+      java.lang.AssertionError: Mini cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_mini_cab_details_page_should_open(ServicesSteps.java:76)
+	at ✽.the Mini cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:22)
+
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_Mini_cab_link_and_its_details_2025-07-30_16-51-22.png
+
+    Embedding Failed Screenshot [image/png 122777 bytes]
+
+❌ FAILED: Validate Mini cab link and its details
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate Mini cab link and its details
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:17 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate Micro cab link and its details" classname="Services page functionality" time="5.685">
+    <failure message="Micro cab details page did not open" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Micro cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_micro_cab_details_page_should_open(ServicesSteps.java:83)
+	at ✽.the Micro cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:27)
+]]></failure>
+    <system-out><![CDATA[
+@TC_UI_005
+Scenario: Validate Micro cab link and its details # src/test/java/com/Cabs/BDD/features/services.feature:25
+🚀 Starting scenario: Validate Micro cab link and its details
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate Micro cab link and its details
+  Given I open the Call Taxi Service application  # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on the Services option              # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_the_services_option()
+  Then the Services page should open              # com.Cabs.BDD.stepdefs.ServicesSteps.the_services_page_should_open()
+  When I click on the Micro link                  # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_the_micro_link()
+  Then the Micro cab details page should open     # com.Cabs.BDD.stepdefs.ServicesSteps.the_micro_cab_details_page_should_open()
+      java.lang.AssertionError: Micro cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_micro_cab_details_page_should_open(ServicesSteps.java:83)
+	at ✽.the Micro cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:27)
+
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_Micro_cab_link_and_its_details_2025-07-30_16-51-27.png
+
+    Embedding Failed Screenshot [image/png 80618 bytes]
+
+❌ FAILED: Validate Micro cab link and its details
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate Micro cab link and its details
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate Sedan cab link and its details" classname="Services page functionality" time="6.159">
+    <failure message="Sedan cab details page did not open" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Sedan cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_sedan_cab_details_page_should_open(ServicesSteps.java:90)
+	at ✽.the Sedan cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:32)
+]]></failure>
+    <system-out><![CDATA[
+@TC_UI_006
+Scenario: Validate Sedan cab link and its details # src/test/java/com/Cabs/BDD/features/services.feature:30
+🚀 Starting scenario: Validate Sedan cab link and its details
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate Sedan cab link and its details
+  Given I open the Call Taxi Service application  # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on the Services option              # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_the_services_option()
+  Then the Services page should open              # com.Cabs.BDD.stepdefs.ServicesSteps.the_services_page_should_open()
+  When I click on the Sedan link                  # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_the_sedan_link()
+  Then the Sedan cab details page should open     # com.Cabs.BDD.stepdefs.ServicesSteps.the_sedan_cab_details_page_should_open()
+      java.lang.AssertionError: Sedan cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_sedan_cab_details_page_should_open(ServicesSteps.java:90)
+	at ✽.the Sedan cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:32)
+
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_Sedan_cab_link_and_its_details_2025-07-30_16-51-34.png
+
+    Embedding Failed Screenshot [image/png 51808 bytes]
+
+❌ FAILED: Validate Sedan cab link and its details
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate Sedan cab link and its details
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:29 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate SUV cab link and its details" classname="Services page functionality" time="5.799">
+    <failure message="SUV cab details page did not open" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: SUV cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_suv_cab_details_page_should_open(ServicesSteps.java:97)
+	at ✽.the SUV cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:37)
+]]></failure>
+    <system-out><![CDATA[
+@TC_UI_007
+Scenario: Validate SUV cab link and its details  # src/test/java/com/Cabs/BDD/features/services.feature:35
+🚀 Starting scenario: Validate SUV cab link and its details
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate SUV cab link and its details
+  Given I open the Call Taxi Service application # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on the Services option             # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_the_services_option()
+  Then the Services page should open             # com.Cabs.BDD.stepdefs.ServicesSteps.the_services_page_should_open()
+  When I click on the Suv link                   # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_the_suv_link()
+  Then the SUV cab details page should open      # com.Cabs.BDD.stepdefs.ServicesSteps.the_suv_cab_details_page_should_open()
+      java.lang.AssertionError: SUV cab details page did not open
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.the_suv_cab_details_page_should_open(ServicesSteps.java:97)
+	at ✽.the SUV cab details page should open(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:37)
+
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_SUV_cab_link_and_its_details_2025-07-30_16-51-39.png
+
+    Embedding Failed Screenshot [image/png 45609 bytes]
+
+❌ FAILED: Validate SUV cab link and its details
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate SUV cab link and its details
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:35 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:35 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate Back button in cab type description page #1" classname="Services page functionality" time="5.696">
+    <error message="Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class=&apos;back&apos; and text()=&apos;Back&apos;] (tried for 3 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b09420b142e44e95cf8a4e7d3fe26d3, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59664/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b09420b142e44e95cf8a4e7d3fe26d3
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></error>
+    <system-out><![CDATA[
+@TC_UI_008
+Scenario Outline: Validate Back button in cab type description page # src/test/java/com/Cabs/BDD/features/services.feature:46
+🚀 Starting scenario: Validate Back button in cab type description page
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate Back button in cab type description page
+  Given I open the Call Taxi Service application                    # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on the Services option                                # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_the_services_option()
+  Then the Services page should open                                # com.Cabs.BDD.stepdefs.ServicesSteps.the_services_page_should_open()
+  When I click on the "Mini" link                                   # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_the_link(java.lang.String)
+  And I click on back link                                          # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6b09420b142e44e95cf8a4e7d3fe26d3, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59664}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59664/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6b09420b142e44e95cf8a4e7d3fe26d3
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+
+  Then I should go back to types of cab services page               # com.Cabs.BDD.stepdefs.ServicesSteps.i_should_go_back_to_types_of_cab_services_page()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_Back_button_in_cab_type_description_page_2025-07-30_16-51-45.png
+
+    Embedding Failed Screenshot [image/png 122777 bytes]
+
+❌ FAILED: Validate Back button in cab type description page
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate Back button in cab type description page
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:41 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:41 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate Back button in cab type description page #2" classname="Services page functionality" time="5.681">
+    <error message="Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class=&apos;back&apos; and text()=&apos;Back&apos;] (tried for 3 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f19e97e6c27487cf8946e0ba6352f284, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59690/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f19e97e6c27487cf8946e0ba6352f284
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></error>
+    <system-out><![CDATA[
+@TC_UI_008
+Scenario Outline: Validate Back button in cab type description page # src/test/java/com/Cabs/BDD/features/services.feature:47
+🚀 Starting scenario: Validate Back button in cab type description page
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate Back button in cab type description page
+  Given I open the Call Taxi Service application                    # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on the Services option                                # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_the_services_option()
+  Then the Services page should open                                # com.Cabs.BDD.stepdefs.ServicesSteps.the_services_page_should_open()
+  When I click on the "Micro" link                                  # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_the_link(java.lang.String)
+  And I click on back link                                          # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [f19e97e6c27487cf8946e0ba6352f284, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59690}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59690/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f19e97e6c27487cf8946e0ba6352f284
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+
+  Then I should go back to types of cab services page               # com.Cabs.BDD.stepdefs.ServicesSteps.i_should_go_back_to_types_of_cab_services_page()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_Back_button_in_cab_type_description_page_2025-07-30_16-51-51.png
+
+    Embedding Failed Screenshot [image/png 80857 bytes]
+
+❌ FAILED: Validate Back button in cab type description page
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate Back button in cab type description page
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:46 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:46 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate Back button in cab type description page #3" classname="Services page functionality" time="5.697">
+    <error message="Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class=&apos;back&apos; and text()=&apos;Back&apos;] (tried for 3 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2ccf3dcafd8395e9b5a34c7e935266a, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59716/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2ccf3dcafd8395e9b5a34c7e935266a
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></error>
+    <system-out><![CDATA[
+@TC_UI_008
+Scenario Outline: Validate Back button in cab type description page # src/test/java/com/Cabs/BDD/features/services.feature:48
+🚀 Starting scenario: Validate Back button in cab type description page
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate Back button in cab type description page
+  Given I open the Call Taxi Service application                    # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on the Services option                                # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_the_services_option()
+  Then the Services page should open                                # com.Cabs.BDD.stepdefs.ServicesSteps.the_services_page_should_open()
+  When I click on the "Sedan" link                                  # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_the_link(java.lang.String)
+  And I click on back link                                          # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e2ccf3dcafd8395e9b5a34c7e935266a, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59716}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59716/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e2ccf3dcafd8395e9b5a34c7e935266a
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+
+  Then I should go back to types of cab services page               # com.Cabs.BDD.stepdefs.ServicesSteps.i_should_go_back_to_types_of_cab_services_page()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_Back_button_in_cab_type_description_page_2025-07-30_16-51-56.png
+
+    Embedding Failed Screenshot [image/png 51808 bytes]
+
+❌ FAILED: Validate Back button in cab type description page
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate Back button in cab type description page
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="Validate Back button in cab type description page #4" classname="Services page functionality" time="5.621">
+    <error message="Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class=&apos;back&apos; and text()=&apos;Back&apos;] (tried for 3 second(s) with 500 milliseconds interval)" type="org.openqa.selenium.TimeoutException"><![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [022f4e719c8204c9605dc0fee4bf49d0, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59742/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 022f4e719c8204c9605dc0fee4bf49d0
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+]]></error>
+    <system-out><![CDATA[
+@TC_UI_008
+Scenario Outline: Validate Back button in cab type description page # src/test/java/com/Cabs/BDD/features/services.feature:49
+🚀 Starting scenario: Validate Back button in cab type description page
+✅ Browser initialized successfully
+✅ Driver initialized successfully for: Validate Back button in cab type description page
+  Given I open the Call Taxi Service application                    # com.Cabs.BDD.stepdefs.NavigationSteps.i_open_the_call_taxi_service_application()
+  And I click on the Services option                                # com.Cabs.BDD.stepdefs.NavigationSteps.i_click_on_the_services_option()
+  Then the Services page should open                                # com.Cabs.BDD.stepdefs.ServicesSteps.the_services_page_should_open()
+  When I click on the "Suv" link                                    # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_the_link(java.lang.String)
+  And I click on back link                                          # com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link()
+      org.openqa.selenium.TimeoutException: Expected condition failed: waiting for presence of element located by: By.xpath: //a[@class='back' and text()='Back'] (tried for 3 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:229)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at ✽.I click on back link(file:///C:/Users/Mohammad%20Talha/OneDrive/Documents/Sprint/project/2%20Sprint/src/test/java/com/Cabs/BDD/features/services.feature:42)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@class='back' and text()='Back']"}
+  (Session info: chrome=138.0.7204.169)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.15.0', revision: '1d14b5521b'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.15'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [022f4e719c8204c9605dc0fee4bf49d0, findElement {using=xpath, value=//a[@class='back' and text()='Back']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 138.0.7204.169, chrome: {chromedriverVersion: 138.0.7204.168 (3e8d82e86e9..., userDataDir: C:\Users\MOHAMM~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59742}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59742/devtoo..., se:cdpVersion: 138.0.7204.169, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 022f4e719c8204c9605dc0fee4bf49d0
+	at jdk.internal.reflect.GeneratedConstructorAccessor77.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:200)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:607)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:364)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:358)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:171)
+	at org.openqa.selenium.support.ui.ExpectedConditions$6.apply(ExpectedConditions.java:168)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:204)
+	at com.Cabs.BDD.utils.WaitUtils.waitForElementToBePresent(WaitUtils.java:215)
+	at com.Cabs.BDD.pages.CabDetailsPage.jsClick(CabDetailsPage.java:40)
+	at com.Cabs.BDD.pages.CabDetailsPage.clickBackLink(CabDetailsPage.java:64)
+	at com.Cabs.BDD.stepdefs.ServicesSteps.i_click_on_back_link(ServicesSteps.java:111)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
+	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
+	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
+	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:29)
+	at io.cucumber.core.runner.CoreStepDefinition.execute(CoreStepDefinition.java:66)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
+	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:51)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:84)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.lambda$run$0(PickleRunners.java:151)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:148)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:144)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:28)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.FeatureRunner.run(FeatureRunner.java:137)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:196)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:89)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runFeatures$6(CucumberExecutionContext.java:148)
+	at io.cucumber.core.runtime.CucumberExecutionContext.execute(CucumberExecutionContext.java:163)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runFeatures(CucumberExecutionContext.java:146)
+	at io.cucumber.junit.Cucumber$StartAndFinishTestRun.evaluate(Cucumber.java:226)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:377)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeWithRerun(JUnit4Provider.java:284)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:248)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:167)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:456)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:169)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:595)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:581)
+
+  Then I should go back to types of cab services page               # com.Cabs.BDD.stepdefs.ServicesSteps.i_should_go_back_to_types_of_cab_services_page()
+📸 Screenshot saved: target/ExtentReports/Screenshots/Validate_Back_button_in_cab_type_description_page_2025-07-30_16-52-02.png
+
+    Embedding Failed Screenshot [image/png 45609 bytes]
+
+❌ FAILED: Validate Back button in cab type description page
+✅ Browser closed successfully
+🔚 Driver closed successfully for: Validate Back button in cab type description page
+]]></system-out>
+    <system-err><![CDATA[Jul 30, 2025 4:51:58 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 138
+Jul 30, 2025 4:51:58 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 138.0.7204.169. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.15.0` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+</testsuite>
